@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>构建工具简介</title>
+</head>
+<body>
+    <!-- 
+        构建工具
+            当我们习惯了node中编写代码的方式后，再回到前端编写的html、css、js这些东西就会感觉不方便，比如：不能放心使用模块化规范（浏览器兼容性问题）、即使可以使用模块化规范也会面临模块过多时的加载问题
+
+            我们就迫切希望有一款工具可以对代码进行打包，将多个模块打包成一个文件。这样一来既解决了兼容性问题，又解决了模块过多的问题
+
+            构建工具就起到这样的作用。通过构建工具可以将使用ESM规范(ES module模块）编写的代码转换为旧的JS语法（解决了旧的浏览器版本兼容性问题）
+     -->
+
+    <!-- 
+        使用打包工具，项目得是node项目
+
+        webpack
+            - 使用步骤：
+                1. 初始化项目`yarn init -y` `npm init -y`
+                2. 安装依赖`webpack`、`webpack-cli`    `yarn add -D webpack webpack-cli`    `-D:表示开发依赖`  `cli 命令行工具·
+                3. 在项目中创建`src`目录，然后编写代码（index.js）
+                4. 执行`yarn webpack`来对代码进行打包（打包后观察dist目录）
+
+            格式化文档快捷键：
+                Shift + Alt + F
+
+            src的文件要遵循html的规范
+            src以外的文件要遵循node的规范（commonJS规范）
+    -->
+</body>
+</html>
